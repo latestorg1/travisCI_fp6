@@ -8,13 +8,13 @@ jobs:
     - os: linux
       dist: focal
       arch: amd64
-      if: env(supercool) IS NOT present
+      if: env(super) IS NOT present
       script:
-        - echo "Triggered var logic where env var(super cool) was not set!"
+        - echo "Triggered var logic where env var(super) was not set!"
 
     - os: linux
       dist: focal
       arch: amd64
-      if: env(supercool) IS present
+      if: env(super) IS present
       script:
-        - echo "Triggered var logic where env var(supercool) was set!"
+        - echo "Triggered var logic where env var(super) was set!"
